@@ -4,7 +4,7 @@
   "description": "Project of covid-19",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "covid": "index.js"
   },
   "keywords": [
     "covid",
