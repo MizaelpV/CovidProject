@@ -1,9 +1,9 @@
-const url = "https://covid19.mathdro.id/api/countries/chile";
-const request = document.getElementById("search");
+// const url = "https://covid19.mathdro.id/api/countries/chile";
+// const request = document.getElementById("search");
 
-request.addEventListener("click", () => {
-  alert("prueba");
-});
+// request.addEventListener("click", () => {
+//   alert("prueba");
+// });
 // const result = fetch(url);
 // result
 //   .then(data => {
@@ -20,3 +20,5 @@ request.addEventListener("click", () => {
 // };
 
 // renderizar();
+
+console.log("Probando ");

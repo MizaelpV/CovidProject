@@ -1,15 +1,24 @@
 {
   "name": "covid-project",
   "version": "1.0.0",
-  "description": "Project of covid-19",
+  "description": "Covid-project",
   "main": "index.js",
   "scripts": {
-    "covid": "index.js"
+    "covid": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MizaelpV/CovidProject.git"
   },
   "keywords": [
-    "covid",
-    "coronavirus"
+    "Covid",
+    "Project",
+    "Coronavirus"
   ],
   "author": "Mizael Paredes Vielma",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MizaelpV/CovidProject/issues"
+  },
+  "homepage": "https://github.com/MizaelpV/CovidProject#readme"
 }
