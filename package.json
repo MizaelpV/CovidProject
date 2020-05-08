@@ -1,0 +1,15 @@
+{
+  "name": "covid-project",
+  "version": "1.0.0",
+  "description": "Project of covid-19",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "covid",
+    "coronavirus"
+  ],
+  "author": "Mizael Paredes Vielma",
+  "license": "ISC"
+}
