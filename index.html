@@ -11,14 +11,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/icons/style.css" />
     <title>Covid Project</title>
   </head>
   <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-dark bg-dark ">
-      <a class="navbar-brand ml-5">Covid-19-project</a>
-      <!-- <input type="checkbox" class="navbar" name="Color" id="" /> -->
-      <form class="form-inline mr-5">
+    <nav class="navbar navbar-light bg-light  fixed-top">
+      <a class="navbar-brand navbar-lg-ml-5">Covid-19-project</a>
+      <form class="form-inline form-lg-mr-5">
         <input
           class="form-control mr-sm-2"
           type="search"
@@ -36,14 +36,14 @@
     </nav>
     <!--/ NavBar -->
     <!-- Title -->
-    <div class="container">
+    <div class="container hero">
       <div class="row">
-        <div class="col text-uppercase text-center mt-5">
+        <div class="col text-uppercase text-center p-3">
           <h1 class="title">Covid-19</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col text-center">
+        <div class="col px-0 text-center">
           <h2 class="subtitle">
             Descubre los datos actualizados de la pandemia
           </h2>
@@ -53,10 +53,10 @@
     <!--/ Title -->
     <!-- Cards -->
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="card mt-5">
-            <div class="card-body text-center mt-5 mb-0">
+      <div class="row cards">
+        <div class="col-12 col-md-6 col-lg-4 px-md-2 py-md-2 card-mine">
+          <div class="card mt-4">
+            <div class="card-body text-center mt-4 mb-0">
               <h5 class="card-title">Confirmed</h5>
               <h6 class="card-subtitle mb-1 text-muted">Card subtitle</h6>
               <p class="card-text my-3">
@@ -67,9 +67,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card mt-5">
-            <div class="card-body text-center mt-5 mb-0">
+        <div class="col-12 col-md-6 col-lg-4 px-md-2 py-md-2 card-mine">
+          <div class="card mt-4">
+            <div class="card-body text-center mt-4 mb-0">
               <h5 class="card-title">Recovery</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
               <p class="card-text my-3">
@@ -80,9 +80,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card mt-5">
-            <div class="card-body text-center mt-5 mb-0">
+        <div class="col-12 col-lg-4 py-md-0 px-md-2 py-lg-2 card-mine">
+          <div class="card third mt-md-1 mt-lg-4">
+            <div class="card-body text-center mt-4 mb-0">
               <h5 class="card-title">Deaths</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
               <p class="card-text my-3">
@@ -96,6 +96,21 @@
       </div>
       <!--/ Cards -->
     </div>
+    <div class="ilustration-container">
+      <img src="./assets/social-distancing.svg" alt="Social-distancing" />
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="name-container">
+        <h4 class="name text-muted">Mizael Paredes Vielma 2020</h4>
+      </div>
+      <div class="container-footer">
+        <i class="icon-github"><a href="#"></a></i>
+        <i class="icon-twitter"><a href="#"></a></i>
+        <i class="icon-instagram"><a href="#"></a></i>
+      </div>
+    </footer>
+    <!--/ Footer -->
     <!-- JavaScript Section -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

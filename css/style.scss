@@ -1,14 +1,262 @@
-body{
+body {
+  height: 100%;
+  background-image: url("../assets/background.png");
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: content-box;
+}
+
+.navbar-brand {
+  cursor: pointer;
+}
+.title {
+  margin-top: 2rem;
+}
+.title,
+.subtitle {
+  color: #fff;
+  font-weight: bold;
+}
+.hero {
+  background: rgba(#250448, 0.3);
+  margin-top: 3em;
+  border-radius: 0.25rem;
+}
+
+.ilustration-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.ilustration-container img {
+  width: 500px;
+}
+
+.footer {
+  height: 3rem;
+  width: 100%;
+  padding: 1.5rem;
+  background: #fff;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.icon-github,
+.icon-instagram,
+.icon-twitter {
+  padding: 6px;
+  color: #250448;
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+}
+.icon-github:hover,
+.icon-instagram:hover,
+.icon-twitter:hover {
+  color: red;
+}
+.name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+// Media queries
+
+@media screen and(max-width:1440px) {
+  body {
     height: 100vh;
-    background-image: url("https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-    background-origin: content-box;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  }
+  .title {
+    margin-top: 2rem;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
+  .name {
+    font-size: 1.2em;
+    margin: 0;
+  }
 }
-.navbar-brand{
-    cursor: pointer;
+@media screen and(max-width:1024px) {
+  body {
+    height: 100vh;
+    position: relative;
+    bottom: 0;
+  }
+  .title {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .hero {
+    position: relative;
+    top: 100px;
+  }
+  .cards {
+    position: relative;
+    top: 150px;
+  }
+  .card-mine {
+    margin-top: 1rem;
+  }
+  .ilustration-container {
+    position: absolute;
+    bottom: 100px;
+  }
+  .ilustration-container img {
+    width: 470px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
+  .name {
+    font-size: 1.1em;
+    margin: 0;
+  }
 }
-.title, .subtitle {
-    color: #fff;
+@media screen and (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+
+  .title {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+  }
+  .hero {
+    position: relative;
+    bottom: 0px;
+    top: 0px;
+  }
+  .cards {
+    top: 0px;
+  }
+  .ilustration-container {
+    padding: 25px;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 0px;
+  }
+  .ilustration-container img {
+    width: 370px;
+  }
+  .icon-github,
+  .icon-instagram,
+  .icon-twitter {
+    padding: 5px;
+    color: blueviolet;
+    font-size: 28px;
+  }
+  .footer {
+    position: relative;
+  }
+  .name {
+    font-size: 0.9em;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  body {
+    height: 100%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-brand {
+    margin: initial;
+    font-size: 1.6rem;
+  }
+
+  .form-inline {
+    flex-flow: initial;
+  }
+
+  .form-control {
+    margin-right: 10px;
+  }
+
+  .title {
+    margin-top: 4.3rem;
+    margin-bottom: 0;
+  }
+  .subtitle {
+    font-size: 28px;
+  }
+
+  .third {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .card-mine {
+    padding: 0px 30px;
+  }
+
+  .ilustration-container {
+    padding: 25px;
+  }
+  .ilustration-container img {
+    width: 350px;
+  }
+
+  .icon-github,
+  .icon-instagram,
+  .icon-twitter {
+    padding: 5px;
+    color: blueviolet;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .title {
+    margin-top: 4.3rem;
+    margin-bottom: 0;
+  }
+
+  .ilustration-container {
+    padding: 15px;
+  }
+  .ilustration-container img {
+    width: 300px;
+  }
+  .icon-github,
+  .icon-instagram,
+  .icon-twitter {
+    padding: 5px;
+    color: blueviolet;
+    font-size: 25px;
+  }
+  .name {
+    font-size: 0.8em;
+    margin: 0;
+  }
 }
