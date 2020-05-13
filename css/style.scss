@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,400;1,600&display=swap");
 body {
   height: 100%;
   background-image: url("../assets/background.png");
@@ -7,13 +8,30 @@ body {
   background-size: cover;
   box-sizing: content-box;
 }
-
 .navbar-brand {
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
 }
+#searchCountry {
+  font-family: "Montserrat", sans-serif;
+}
+#search {
+  font-family: "Montserrat", sans-serif;
+  &:hover {
+    color: #fff;
+  }
+}
+
 .title {
   margin-top: 2rem;
+  font-size: 4.5rem;
+  font-family: "Luckiest Guy", cursive;
 }
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+}
+
 .title,
 .subtitle {
   color: #fff;
@@ -23,6 +41,43 @@ body {
   background: rgba(#250448, 0.3);
   margin-top: 3em;
   border-radius: 0.25rem;
+}
+.main-title {
+  font-family: "Poppins", sans-serif;
+}
+
+.first {
+  background: #00f1f1;
+}
+
+.first .card-link {
+  color: #a5003f;
+  &:hover {
+    color: #250448;
+  }
+}
+
+.second {
+  color: #fff;
+  background: #a5003f;
+}
+
+.third {
+  background: #1ea303;
+  color: #00f1f1;
+}
+.card-link {
+  color: #fff;
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+#confirmados,
+#fallecidos,
+#recuperados {
+  font-family: "Montserrat", sans-serif;
 }
 
 .ilustration-container {
@@ -39,6 +94,7 @@ body {
   width: 500px;
 }
 
+// Footer
 .footer {
   height: 3rem;
   width: 100%;
@@ -60,6 +116,14 @@ body {
   height: 100%;
 }
 
+.container-footer a {
+  text-decoration: none;
+}
+
+.container-footer a:hover {
+  transform: translateY(-2px);
+}
+
 .icon-github,
 .icon-instagram,
 .icon-twitter {
@@ -73,16 +137,18 @@ a {
 .icon-github:hover,
 .icon-instagram:hover,
 .icon-twitter:hover {
-  color: red;
+  color: #f60261;
 }
+
 .name-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .name {
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 // Media queries
@@ -126,7 +192,7 @@ a {
   }
   .ilustration-container {
     position: absolute;
-    bottom: 100px;
+    bottom: 70px;
   }
   .ilustration-container img {
     width: 470px;
@@ -171,7 +237,6 @@ a {
   .icon-instagram,
   .icon-twitter {
     padding: 5px;
-    color: blueviolet;
     font-size: 28px;
   }
   .footer {
@@ -205,11 +270,12 @@ a {
   }
 
   .title {
-    margin-top: 4.3rem;
+    margin-top: 5rem;
     margin-bottom: 0;
+    font-size: 3rem;
   }
   .subtitle {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
 
   .third {
@@ -232,14 +298,17 @@ a {
   .icon-instagram,
   .icon-twitter {
     padding: 5px;
-    color: blueviolet;
     font-size: 28px;
   }
 }
 @media screen and (max-width: 375px) {
   .title {
-    margin-top: 4.3rem;
+    margin-top: 6rem;
     margin-bottom: 0;
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 2rem;
   }
 
   .ilustration-container {
@@ -252,7 +321,6 @@ a {
   .icon-instagram,
   .icon-twitter {
     padding: 5px;
-    color: blueviolet;
     font-size: 25px;
   }
   .name {

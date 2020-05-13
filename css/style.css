@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,400;1,600&display=swap");
 body {
   height: 100%;
   background-image: url("../assets/background.png");
@@ -11,10 +12,29 @@ body {
 
 .navbar-brand {
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+#searchCountry {
+  font-family: "Montserrat", sans-serif;
+}
+
+#search {
+  font-family: "Montserrat", sans-serif;
+}
+
+#search:hover {
+  color: #fff;
 }
 
 .title {
   margin-top: 2rem;
+  font-size: 4.5rem;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
 }
 
 .title,
@@ -27,6 +47,47 @@ body {
   background: rgba(37, 4, 72, 0.3);
   margin-top: 3em;
   border-radius: 0.25rem;
+}
+
+.main-title {
+  font-family: "Poppins", sans-serif;
+}
+
+.first {
+  background: #00f1f1;
+}
+
+.first .card-link {
+  color: #a5003f;
+}
+
+.first .card-link:hover {
+  color: #250448;
+}
+
+.second {
+  color: #fff;
+  background: #a5003f;
+}
+
+.third {
+  background: #1ea303;
+  color: #00f1f1;
+}
+
+.card-link {
+  color: #fff;
+}
+
+.card-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#confirmados,
+#fallecidos,
+#recuperados {
+  font-family: "Montserrat", sans-serif;
 }
 
 .ilustration-container {
@@ -82,6 +143,15 @@ body {
   height: 100%;
 }
 
+.container-footer a {
+  text-decoration: none;
+}
+
+.container-footer a:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
 .icon-github,
 .icon-instagram,
 .icon-twitter {
@@ -97,7 +167,7 @@ a {
 .icon-github:hover,
 .icon-instagram:hover,
 .icon-twitter:hover {
-  color: red;
+  color: #f60261;
 }
 
 .name-container {
@@ -113,8 +183,9 @@ a {
 }
 
 .name {
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 1440px) {
@@ -157,7 +228,7 @@ a {
   }
   .ilustration-container {
     position: absolute;
-    bottom: 100px;
+    bottom: 70px;
   }
   .ilustration-container img {
     width: 470px;
@@ -201,7 +272,6 @@ a {
   .icon-instagram,
   .icon-twitter {
     padding: 5px;
-    color: blueviolet;
     font-size: 28px;
   }
   .footer {
@@ -242,11 +312,12 @@ a {
     margin-right: 10px;
   }
   .title {
-    margin-top: 4.3rem;
+    margin-top: 5rem;
     margin-bottom: 0;
+    font-size: 3rem;
   }
   .subtitle {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
   .third {
     margin-top: 24px;
@@ -265,15 +336,18 @@ a {
   .icon-instagram,
   .icon-twitter {
     padding: 5px;
-    color: blueviolet;
     font-size: 28px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .title {
-    margin-top: 4.3rem;
+    margin-top: 6rem;
     margin-bottom: 0;
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 2rem;
   }
   .ilustration-container {
     padding: 15px;
@@ -285,7 +359,6 @@ a {
   .icon-instagram,
   .icon-twitter {
     padding: 5px;
-    color: blueviolet;
     font-size: 25px;
   }
   .name {

@@ -12,6 +12,10 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/icons/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
     <title>Covid Project</title>
   </head>
   <body>
@@ -22,8 +26,10 @@
         <input
           class="form-control mr-sm-2"
           type="search"
-          placeholder="Search a country"
+          placeholder="Busca tu país"
           aria-label="Search"
+          id="searchCountry"
+          autocomplete="off"
         />
         <button
           class="btn btn-outline-warning my-2 my-sm-0"
@@ -55,11 +61,14 @@
     <div class="container">
       <div class="row cards">
         <div class="col-12 col-md-6 col-lg-4 px-md-2 py-md-2 card-mine">
-          <div class="card mt-4">
-            <div class="card-body text-center mt-4 mb-0">
-              <h5 class="card-title">Confirmed</h5>
-              <h6 class="card-subtitle mb-1 text-muted">Card confirmed</h6>
-              <p class="card-text my-3" id="confirmed">
+          <div class="card first mt-4">
+            <div class="card-body p-5 text-center mt-4 mb-0">
+              <h5 class="card-title text-uppercase main-title">
+                Casos <br />
+                confirmados
+              </h5>
+              <h6 class="card-subtitle mb-1 text-muted"></h6>
+              <p class="card-text my-3" id="confirmados">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -68,11 +77,14 @@
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 px-md-2 py-md-2 card-mine">
-          <div class="card mt-4">
-            <div class="card-body text-center mt-4 mb-0">
-              <h5 class="card-title">Deaths</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card deaths</h6>
-              <p class="card-text my-3" id="deaths">
+          <div class="card second mt-4">
+            <div class="card-body p-5 text-center mt-4 mb-0">
+              <h5 class="card-title text-uppercase main-title">
+                Casos <br />
+                fallecidos
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+              <p class="card-text my-3" id="fallecidos">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -82,10 +94,13 @@
         </div>
         <div class="col-12 col-lg-4 py-md-0 px-md-2 py-lg-2 card-mine">
           <div class="card third mt-md-1 mt-lg-4">
-            <div class="card-body text-center mt-4 mb-0">
-              <h5 class="card-title">Recovery</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card recovery</h6>
-              <p class="card-text my-3" id="recovery">
+            <div class="card-body p-5 text-center mt-4 mb-0">
+              <h5 class="card-title text-uppercase main-title">
+                Casos <br />
+                recuperados
+              </h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+              <p class="card-text my-3" id="recuperados">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
@@ -105,9 +120,15 @@
         <h4 class="name text-muted">Mizael Paredes Vielma 2020</h4>
       </div>
       <div class="container-footer">
-        <i class="icon-github"><a href="#"></a></i>
-        <i class="icon-twitter"><a href="#"></a></i>
-        <i class="icon-instagram"><a href="#"></a></i>
+        <a href="https://github.com/mizaelpv" target="_blank"
+          ><i class="icon-github"></i
+        ></a>
+        <a href="https://twitter.com/mizaelpvielma" target="_blank"
+          ><i class="icon-twitter"></i
+        ></a>
+        <a href="https://instagram.com/mizaelpvielma" target="_blank"
+          ><i class="icon-instagram"></i
+        ></a>
       </div>
     </footer>
     <!--/ Footer -->
