@@ -4,6 +4,7 @@ const recuperado = document.getElementById("recuperados");
 const hero = document.getElementById("hero");
 const searchCountry = document.getElementById("searchCountry");
 const search = document.getElementById("search");
+const flagPicture = document.getElementById("flagPicture");
 const url = "https://covid19.mathdro.id/api/";
 
 let formatNumber = {
@@ -134,23 +135,81 @@ const fetchCountryConfirmed = (async = country => {
       let confirm = formatNumber.new(confirmed.value);
       let modified =
         country.substring(0, 1).toUpperCase() + country.substring(1);
-      console.log(
-        `La cantidad de casos confirmados en ${modified} es de ${confirm} personas`
-      );
+
+      return (confirmado.innerText = `La cantidad de casos\n confirmados en ${modified} es de\n ${confirm} personas`);
     });
   } catch (error) {
     console.error(error);
   }
 });
 
+const fetchCountryDeaths = (async = country => {
+  try {
+    fetch(`${urlCountries}/${country}`).then(async data => {
+      const { deaths } = await data.json();
+      let deathsFormat = formatNumber.new(deaths.value);
+      let modified =
+        country.substring(0, 1).toUpperCase() + country.substring(1);
+      return (muerte.innerText = `La cantidad de casos\n fallecidos en ${modified} es de\n ${deathsFormat} personas`);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+});
+
+const fetchCountryRecovered = (async = country => {
+  try {
+    fetch(`${urlCountries}/${country}`).then(async data => {
+      const { recovered } = await data.json();
+      let recoveredFormat = formatNumber.new(recovered.value);
+      let modified =
+        country.substring(0, 1).toUpperCase() + country.substring(1);
+      return (recuperado.innerText = `La cantidad de casos\n recuperados en ${modified} es de\n ${recoveredFormat} personas`);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+});
+
+function renderFlag(code) {
+  let image = new Image();
+  image.src = `https://www.countryflags.io/${code}/flat/64.png`;
+  flagPicture.appendChild(image);
+}
+
+const requestFlags = countryName => {
+  if (countryName.length >= 3) {
+    countryName =
+      countryName.substring(0, 1).toUpperCase() + countryName.substring(1);
+  } else {
+    countryName = countryName.substring(0, 2).toUpperCase;
+  }
+  const urlCountries = "https://covid19.mathdro.id/api/countries";
+  fetch(urlCountries)
+    .then(data => {
+      return data.json();
+    })
+    .then(({ countries }) => {
+      countries.map(country => {
+        if (country.name === countryName) {
+          let code = country.iso2.toLowerCase();
+          return renderFlag(code);
+        }
+      });
+    });
+};
+
 const renderCountry = event => {
   event.preventDefault();
   if (searchCountry.value) {
     let country = searchCountry.value.toLowerCase();
     fetchCountryConfirmed(country);
+    fetchCountryDeaths(country);
+    fetchCountryRecovered(country);
+    requestFlags(country);
     searchCountry.value = "";
   } else {
-    console.log("No puede estar vacío");
+    alert("No puede estar vacío");
   }
 };
 
